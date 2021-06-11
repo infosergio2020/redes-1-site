@@ -1,0 +1,142 @@
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* Now 10px = 1rem! */
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-size: 1.6rem; /* default font-size for document */
+  line-height: 1.5; /* a nice line-height */
+}
+
+.container{
+    margin: 0 auto;
+}
+
+h1{
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    background: linear-gradient(to top, rgb(55, 59, 68), rgb(66, 134, 244));
+    display: flex;
+    align-items: center;
+}
+
+.logo-container{
+    width: 12rem;
+    margin: 0;
+}
+
+.logo-container img {
+    width: 100%;
+}
+
+.list-container{
+    margin-left: 20rem;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.list-container li{
+    cursor: pointer;
+    color: white;
+    margin: 0 2rem;
+    background-color: #28456bdf;
+    padding: 1rem 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: .8rem;
+}
+
+.list-container li:hover{
+    background-color: #5b6e88ce;
+    border: 1px solid white;
+    transform: scale(1.2);
+    transition: background-color 300ms ease-in-out;
+    transition: transform 500ms ease;
+}
+
+
+
+
+
+.footer-container{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient( rgb(16, 17, 19), rgb(35, 72, 133),rgb(16, 17, 19));
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item{
+    color: white;
+    margin: 0;
+    padding: 0 10rem;
+}
+
+
+/* perdida y ganancia */
+
+.formulas-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ganancia,.perdida{
+    margin:0 auto;
+    padding: 0 8rem;
+    text-align: center;
+    border: 1px solid #5b6e88ce;
+}
+
+
+/* formulario */
+
+fieldset{
+    border-radius: 2.5rem;
+}
+
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-item{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.input-item input{
+    margin-left: 2rem;
+    width: 5rem;
+}
+
+/* result */
+.result{
+    background-color: #083a7adf;
+    color: #ffffff;
+    padding: 0 1.2rem;
+    border-radius: .8rem;
+    text-align: center;
+}
+
+.result span{
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}

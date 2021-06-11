@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/atom.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Potencia</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo-container">
+                <img src="img/Redes-de-datos-1.svg">
+            </div>
+            <ul class="list-container">
+                <a href="potencia.html"><li>Formula de potencias</li></a>
+                <a href="potencia.html"><li>Formula de nyquist</li></a>
+                <a href="potencia.html"><li>Formula de Shannon</li></a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 style="margin-bottom: 0;">Redes de datos 1</h1>
+            <div class="formulas-container">
+                <div class="ganancia">
+                    <h2>Ganancia</h2>
+                    <img src="img/Ganancia.jpg" alt="">
+
+                    <form>
+                        <fieldset>
+                            <div class="input-container">
+                                <div class="input-item">
+                                    <label for="p_salida">P_salida</label>
+                                    <input type="number" id="p_salida_g">  
+                                </div>
+                                <div class="input-item">
+                                    <label for="p_entrada">P_entrada</label>
+                                    <input type="number" id="p_entrada_g">        
+                                </div>
+                            </div>
+                        </fieldset>    
+                    </form>
+                    <button onclick="ganancia()">Calcular</button>
+                    <div class="result">
+                        <h2>G <span id="ganancia_result">= 12</span></h2>
+                    </div>
+                </div>
+                <div class="perdida">
+                    <h2>Perdida</h2>
+                    <img src="img/Perdida.jpg" alt="">
+                    <form action="" method="post">
+                        <fieldset>
+                            <div class="input-container">
+                                <div class="input-item">
+                                    <label for="p_entrada">P_entrada</label>
+                                    <input type="number" id="p_entrada_p">        
+                                </div>
+                                <div class="input-item">
+                                    <label for="p_salida">P_salida</label>
+                                    <input type="number" id="p_salida_p">  
+                                </div>
+                            </div>
+                        </fieldset>                    
+                    </form>
+                    <button onclick="perdida()">Calcular</button>
+                    <div class="result">
+                        <h2>L <span id="perdida_result">= 12</span></h2>
+                    </div>
+                </div>
+            </div>    
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <h3>Redes sociales</h3>
+            </div>
+            <div class="footer-item">
+                <h3>Derechos reservados &copy; <span>2021</span></h3>
+            </div>
+            <div class="footer-item">
+                <h3>Más informacion</h3>
+            </div>
+        </div>
+    </footer>
+    <script src="js/calculos.js"></script>
+</body>
+</html>
